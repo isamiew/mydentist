@@ -1,0 +1,42 @@
+@using System.Globalization
+@inject NavigationManager Nav
+
+<div class="relative">
+    <select class="text-sm border border-gray-200 rounded-lg px-2 py-1.5 text-gray-600 bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 cursor-pointer"
+            @onchange="OnCultureChanged">
+        @foreach (var culture in _supportedCultures)
+        {
+            <option value="@culture.Name" selected="@(CultureInfo.CurrentCulture.Name == culture.Name)">
+                @GetDisplayName(culture)
+            </option>
+        }
+    </select>
+</div>
+
+@code {
+    private readonly CultureInfo[] _supportedCultures = new[]
+    {
+        new CultureInfo("uz-UZ"),
+        new CultureInfo("ru-RU"),
+        new CultureInfo("en-US")
+    };
+
+    private static string GetDisplayName(CultureInfo culture) => culture.Name switch
+    {
+        "uz-UZ" => "O'zbek",
+        "ru-RU" => "Русский",
+        "en-US" => "English",
+        _ => culture.DisplayName
+    };
+
+    private void OnCultureChanged(ChangeEventArgs e)
+    {
+        var selectedCulture = e.Value?.ToString();
+        if (!string.IsNullOrEmpty(selectedCulture))
+        {
+            var uri = new Uri(Nav.Uri).PathAndQuery;
+            var cultureUrl = $"Culture/Set?culture={selectedCulture}&redirectUri={Uri.EscapeDataString(uri)}";
+            Nav.NavigateTo(cultureUrl, forceLoad: true);
+        }
+    }
+}

@@ -1,6 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
+    <Compile Remove="Features\**" />
+    <Compile Remove="Layout\**" />
+    <Content Remove="Features\**" />
+    <Content Remove="Layout\**" />
+    <EmbeddedResource Remove="Features\**" />
+    <EmbeddedResource Remove="Layout\**" />
+    <None Remove="Features\**" />
+    <None Remove="Layout\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MyDentist.Core\MyDentist.Core.csproj" />
   </ItemGroup>
 

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="0" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter</value></resheader>
+
+  <!-- Navigation -->
+  <data name="Nav_Home" xml:space="preserve"><value>Главная</value></data>
+  <data name="Nav_FindDentist" xml:space="preserve"><value>Найти стоматолога</value></data>
+  <data name="Nav_Services" xml:space="preserve"><value>Услуги</value></data>
+  <data name="Nav_About" xml:space="preserve"><value>О нас</value></data>
+  <data name="Nav_Login" xml:space="preserve"><value>Войти</value></data>
+  <data name="Nav_Register" xml:space="preserve"><value>Регистрация</value></data>
+  <data name="Nav_PatientPortal" xml:space="preserve"><value>Портал пациента</value></data>
+  <data name="Nav_DoctorPortal" xml:space="preserve"><value>Портал врача</value></data>
+
+  <!-- Hero Section -->
+  <data name="Hero_Title" xml:space="preserve"><value>Найдите идеального</value></data>
+  <data name="Hero_TitleHighlight" xml:space="preserve"><value>стоматолога</value></data>
+  <data name="Hero_Subtitle" xml:space="preserve"><value>Свяжитесь с проверенными стоматологами рядом с вами. Запишитесь на приём онлайн и управляйте здоровьем зубов в одном месте.</value></data>
+
+  <!-- Search -->
+  <data name="Search_Placeholder" xml:space="preserve"><value>Имя стоматолога или специализация...</value></data>
+  <data name="Search_Label" xml:space="preserve"><value>Поиск</value></data>
+  <data name="Search_Region" xml:space="preserve"><value>Регион</value></data>
+  <data name="Search_AllRegions" xml:space="preserve"><value>Все регионы</value></data>
+  <data name="Search_Service" xml:space="preserve"><value>Услуга</value></data>
+  <data name="Search_AllServices" xml:space="preserve"><value>Все услуги</value></data>
+  <data name="Search_Button" xml:space="preserve"><value>Найти стоматологов</value></data>
+
+  <!-- Statistics -->
+  <data name="Stats_Dentists" xml:space="preserve"><value>Проверенных стоматологов</value></data>
+  <data name="Stats_Regions" xml:space="preserve"><value>Регионов охвачено</value></data>
+  <data name="Stats_Patients" xml:space="preserve"><value>Довольных пациентов</value></data>
+
+  <!-- Map Section -->
+  <data name="Map_Title" xml:space="preserve"><value>Найдите стоматологов рядом</value></data>
+  <data name="Map_Subtitle" xml:space="preserve"><value>Ищите по расположению или используйте поиск выше.</value></data>
+  <data name="Map_ComingSoon" xml:space="preserve"><value>Интерактивная карта скоро появится</value></data>
+
+  <!-- Dentist Cards -->
+  <data name="Dentists_Title" xml:space="preserve"><value>Лучшие стоматологи</value></data>
+  <data name="Dentists_Subtitle" xml:space="preserve"><value>Надёжные специалисты, готовые вам помочь.</value></data>
+  <data name="Dentists_BookNow" xml:space="preserve"><value>Записаться →</value></data>
+  <data name="Dentists_Reviews" xml:space="preserve"><value>отзывов</value></data>
+
+  <!-- Specialties -->
+  <data name="Specialty_General" xml:space="preserve"><value>Общая стоматология</value></data>
+  <data name="Specialty_Orthodontics" xml:space="preserve"><value>Ортодонтия</value></data>
+  <data name="Specialty_Cosmetic" xml:space="preserve"><value>Косметическая стоматология</value></data>
+  <data name="Specialty_Surgery" xml:space="preserve"><value>Хирургия</value></data>
+
+  <!-- Footer -->
+  <data name="Footer_Description" xml:space="preserve"><value>Современная стоматологическая платформа, соединяющая пациентов с проверенными стоматологами.</value></data>
+  <data name="Footer_Platform" xml:space="preserve"><value>Платформа</value></data>
+  <data name="Footer_Support" xml:space="preserve"><value>Поддержка</value></data>
+  <data name="Footer_HelpCenter" xml:space="preserve"><value>Центр поддержки</value></data>
+  <data name="Footer_Contact" xml:space="preserve"><value>Контакты</value></data>
+  <data name="Footer_Privacy" xml:space="preserve"><value>Конфиденциальность</value></data>
+  <data name="Footer_ForDentists" xml:space="preserve"><value>Для стоматологов</value></data>
+  <data name="Footer_JoinNetwork" xml:space="preserve"><value>Присоединиться к сети</value></data>
+  <data name="Footer_Rights" xml:space="preserve"><value>Все права защищены.</value></data>
+
+  <!-- Buttons -->
+  <data name="Btn_GoToPatientPortal" xml:space="preserve"><value>Перейти в портал пациента</value></data>
+  <data name="Btn_DoctorLogin" xml:space="preserve"><value>Вход для врачей</value></data>
+
+  <!-- Language -->
+  <data name="Language" xml:space="preserve"><value>Язык</value></data>
+</root>

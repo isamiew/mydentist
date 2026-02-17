@@ -1,0 +1,16 @@
+{
+    "name": "mydentist-web",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "npx @tailwindcss/cli -i ./wwwroot/css/input.css -o ./wwwroot/css/main.css --watch",
+        "build": "npx @tailwindcss/cli -i ./wwwroot/css/input.css -o ./wwwroot/css/main.css --minify"
+    },
+    "devDependencies": {
+        "@tailwindcss/cli": "^4.1.18",
+        "@tailwindcss/postcss": "^4.1.18",
+        "autoprefixer": "^10.4.21",
+        "postcss": "^8.5.6",
+        "tailwindcss": "^4.1.18"
+    }
+}

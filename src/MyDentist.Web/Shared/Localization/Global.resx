@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="0" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter</value></resheader>
+
+  <!-- Navigation -->
+  <data name="Nav_Home" xml:space="preserve"><value>Bosh sahifa</value></data>
+  <data name="Nav_FindDentist" xml:space="preserve"><value>Stomatolog topish</value></data>
+  <data name="Nav_Services" xml:space="preserve"><value>Xizmatlar</value></data>
+  <data name="Nav_About" xml:space="preserve"><value>Biz haqimizda</value></data>
+  <data name="Nav_Login" xml:space="preserve"><value>Kirish</value></data>
+  <data name="Nav_Register" xml:space="preserve"><value>Ro'yxatdan o'tish</value></data>
+  <data name="Nav_PatientPortal" xml:space="preserve"><value>Bemor portali</value></data>
+  <data name="Nav_DoctorPortal" xml:space="preserve"><value>Shifokor portali</value></data>
+
+  <!-- Hero Section -->
+  <data name="Hero_Title" xml:space="preserve"><value>O'zingizga mos</value></data>
+  <data name="Hero_TitleHighlight" xml:space="preserve"><value>stomatologni toping</value></data>
+  <data name="Hero_Subtitle" xml:space="preserve"><value>Yaqin atrofingizdagi ishonchli stomatologlar bilan bog'laning. Qabulga onlayn yoziling va tish salomatligingizni bir joydan boshqaring.</value></data>
+
+  <!-- Search -->
+  <data name="Search_Placeholder" xml:space="preserve"><value>Stomatolog nomi yoki mutaxassisligi...</value></data>
+  <data name="Search_Label" xml:space="preserve"><value>Qidirish</value></data>
+  <data name="Search_Region" xml:space="preserve"><value>Viloyat</value></data>
+  <data name="Search_AllRegions" xml:space="preserve"><value>Barcha viloyatlar</value></data>
+  <data name="Search_Service" xml:space="preserve"><value>Xizmat</value></data>
+  <data name="Search_AllServices" xml:space="preserve"><value>Barcha xizmatlar</value></data>
+  <data name="Search_Button" xml:space="preserve"><value>Stomatologlarni qidirish</value></data>
+
+  <!-- Statistics -->
+  <data name="Stats_Dentists" xml:space="preserve"><value>Tasdiqlangan stomatologlar</value></data>
+  <data name="Stats_Regions" xml:space="preserve"><value>Qamrab olingan viloyatlar</value></data>
+  <data name="Stats_Patients" xml:space="preserve"><value>Mamnun bemorlar</value></data>
+
+  <!-- Map Section -->
+  <data name="Map_Title" xml:space="preserve"><value>Yaqin atrofdagi stomatologlarni toping</value></data>
+  <data name="Map_Subtitle" xml:space="preserve"><value>Joylashuv bo'yicha qidiring yoki yuqoridagi qidiruvdan foydalaning.</value></data>
+  <data name="Map_ComingSoon" xml:space="preserve"><value>Interaktiv xarita tez orada</value></data>
+
+  <!-- Dentist Cards -->
+  <data name="Dentists_Title" xml:space="preserve"><value>Eng yaxshi stomatologlar</value></data>
+  <data name="Dentists_Subtitle" xml:space="preserve"><value>Sizga yordam berishga tayyor ishonchli mutaxassislar.</value></data>
+  <data name="Dentists_BookNow" xml:space="preserve"><value>Qabulga yozilish →</value></data>
+  <data name="Dentists_Reviews" xml:space="preserve"><value>ta sharh</value></data>
+
+  <!-- Specialties -->
+  <data name="Specialty_General" xml:space="preserve"><value>Umumiy stomatologiya</value></data>
+  <data name="Specialty_Orthodontics" xml:space="preserve"><value>Ortodontiya</value></data>
+  <data name="Specialty_Cosmetic" xml:space="preserve"><value>Kosmetik stomatologiya</value></data>
+  <data name="Specialty_Surgery" xml:space="preserve"><value>Jarrohlik</value></data>
+
+  <!-- Footer -->
+  <data name="Footer_Description" xml:space="preserve"><value>Bemorlarni ishonchli stomatologlar bilan bog'lovchi zamonaviy stomatologiya platformasi.</value></data>
+  <data name="Footer_Platform" xml:space="preserve"><value>Platforma</value></data>
+  <data name="Footer_Support" xml:space="preserve"><value>Yordam</value></data>
+  <data name="Footer_HelpCenter" xml:space="preserve"><value>Yordam markazi</value></data>
+  <data name="Footer_Contact" xml:space="preserve"><value>Bog'lanish</value></data>
+  <data name="Footer_Privacy" xml:space="preserve"><value>Maxfiylik</value></data>
+  <data name="Footer_ForDentists" xml:space="preserve"><value>Stomatologlar uchun</value></data>
+  <data name="Footer_JoinNetwork" xml:space="preserve"><value>Tarmoqqa qo'shilish</value></data>
+  <data name="Footer_Rights" xml:space="preserve"><value>Barcha huquqlar himoyalangan.</value></data>
+
+  <!-- Buttons -->
+  <data name="Btn_GoToPatientPortal" xml:space="preserve"><value>Bemor portaliga o'tish</value></data>
+  <data name="Btn_DoctorLogin" xml:space="preserve"><value>Shifokor kirishi</value></data>
+
+  <!-- Language -->
+  <data name="Language" xml:space="preserve"><value>Til</value></data>
+</root>

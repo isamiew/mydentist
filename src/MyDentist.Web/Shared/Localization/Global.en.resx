@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="0" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter</value></resheader>
+
+  <!-- Navigation -->
+  <data name="Nav_Home" xml:space="preserve"><value>Home</value></data>
+  <data name="Nav_FindDentist" xml:space="preserve"><value>Find Dentist</value></data>
+  <data name="Nav_Services" xml:space="preserve"><value>Services</value></data>
+  <data name="Nav_About" xml:space="preserve"><value>About</value></data>
+  <data name="Nav_Login" xml:space="preserve"><value>Login</value></data>
+  <data name="Nav_Register" xml:space="preserve"><value>Register</value></data>
+  <data name="Nav_PatientPortal" xml:space="preserve"><value>Patient Portal</value></data>
+  <data name="Nav_DoctorPortal" xml:space="preserve"><value>Doctor Portal</value></data>
+
+  <!-- Hero Section -->
+  <data name="Hero_Title" xml:space="preserve"><value>Find Your Perfect</value></data>
+  <data name="Hero_TitleHighlight" xml:space="preserve"><value>Dental Care</value></data>
+  <data name="Hero_Subtitle" xml:space="preserve"><value>Connect with top-rated dentists near you. Book appointments instantly and manage your dental health in one place.</value></data>
+
+  <!-- Search -->
+  <data name="Search_Placeholder" xml:space="preserve"><value>Dentist name or specialty...</value></data>
+  <data name="Search_Label" xml:space="preserve"><value>Search</value></data>
+  <data name="Search_Region" xml:space="preserve"><value>Region</value></data>
+  <data name="Search_AllRegions" xml:space="preserve"><value>All Regions</value></data>
+  <data name="Search_Service" xml:space="preserve"><value>Service</value></data>
+  <data name="Search_AllServices" xml:space="preserve"><value>All Services</value></data>
+  <data name="Search_Button" xml:space="preserve"><value>Search Dentists</value></data>
+
+  <!-- Statistics -->
+  <data name="Stats_Dentists" xml:space="preserve"><value>Verified Dentists</value></data>
+  <data name="Stats_Regions" xml:space="preserve"><value>Regions Covered</value></data>
+  <data name="Stats_Patients" xml:space="preserve"><value>Happy Patients</value></data>
+
+  <!-- Map Section -->
+  <data name="Map_Title" xml:space="preserve"><value>Find Dentists Near You</value></data>
+  <data name="Map_Subtitle" xml:space="preserve"><value>Browse by location or use the search above.</value></data>
+  <data name="Map_ComingSoon" xml:space="preserve"><value>Interactive Map Coming Soon</value></data>
+
+  <!-- Dentist Cards -->
+  <data name="Dentists_Title" xml:space="preserve"><value>Top Rated Dentists</value></data>
+  <data name="Dentists_Subtitle" xml:space="preserve"><value>Trusted professionals ready to help you.</value></data>
+  <data name="Dentists_BookNow" xml:space="preserve"><value>Book Now →</value></data>
+  <data name="Dentists_Reviews" xml:space="preserve"><value>reviews</value></data>
+
+  <!-- Specialties -->
+  <data name="Specialty_General" xml:space="preserve"><value>General Dentistry</value></data>
+  <data name="Specialty_Orthodontics" xml:space="preserve"><value>Orthodontics</value></data>
+  <data name="Specialty_Cosmetic" xml:space="preserve"><value>Cosmetic Dentistry</value></data>
+  <data name="Specialty_Surgery" xml:space="preserve"><value>Surgery</value></data>
+
+  <!-- Footer -->
+  <data name="Footer_Description" xml:space="preserve"><value>Modern dental care platform connecting patients with trusted dentists.</value></data>
+  <data name="Footer_Platform" xml:space="preserve"><value>Platform</value></data>
+  <data name="Footer_Support" xml:space="preserve"><value>Support</value></data>
+  <data name="Footer_HelpCenter" xml:space="preserve"><value>Help Center</value></data>
+  <data name="Footer_Contact" xml:space="preserve"><value>Contact</value></data>
+  <data name="Footer_Privacy" xml:space="preserve"><value>Privacy</value></data>
+  <data name="Footer_ForDentists" xml:space="preserve"><value>For Dentists</value></data>
+  <data name="Footer_JoinNetwork" xml:space="preserve"><value>Join Network</value></data>
+  <data name="Footer_Rights" xml:space="preserve"><value>All rights reserved.</value></data>
+
+  <!-- Buttons -->
+  <data name="Btn_GoToPatientPortal" xml:space="preserve"><value>Go to Patient Portal</value></data>
+  <data name="Btn_DoctorLogin" xml:space="preserve"><value>Doctor Login</value></data>
+
+  <!-- Language -->
+  <data name="Language" xml:space="preserve"><value>Language</value></data>
+</root>
