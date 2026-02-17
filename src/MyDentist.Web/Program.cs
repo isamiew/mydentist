@@ -20,7 +20,7 @@ else
     app.UseHttpsRedirection();
 }
 
-app.UseStatusCodePagesWithReExecute("/not-found", createScopeForStatusCodePages: true);
+app.UseStatusCodePagesWithReExecute("/not-found");
 
 app.MapGet("/health", () => "OK");
 
