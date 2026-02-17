@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Launch (Blazor)",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/MyDentist.Web/bin/Debug/net10.0/MyDentist.Web.dll",
+            "cwd": "${workspaceFolder}/src/MyDentist.Web",
+            "stopAtEntry": false,
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            },
+            "preLaunchTask": "build"
+        }
+    ]
+}
