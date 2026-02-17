@@ -1,0 +1,19 @@
+# Visual Studio / VS Code
+.vs/
+.vscode/
+bin/
+obj/
+*/bin/
+*/obj/
+
+# Git
+.git/
+
+# Node
+node_modules/
+package-lock.json
+
+# Local env
+.env
+*.user
+*.suo
