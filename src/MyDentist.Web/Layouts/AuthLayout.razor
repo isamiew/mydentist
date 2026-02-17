@@ -1,0 +1,17 @@
+@using MyDentist.Web.Shared.Components
+@inherits LayoutComponentBase
+
+<div class="min-h-screen bg-gray-50">
+    <header class="bg-white border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <a href="/" class="inline-flex items-center">
+                <BrandMark />
+            </a>
+            <LanguageSwitch />
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        @Body
+    </main>
+</div>

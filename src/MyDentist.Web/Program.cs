@@ -1,5 +1,6 @@
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.Extensions.Options;
 using MyDentist.Web.App;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,27 @@ builder.Services.AddRazorComponents()
 // Localization
 builder.Services.AddLocalization();
 builder.Services.AddControllers();
+
+var supportedCultures = new[]
+{
+    new CultureInfo("uz-UZ"),
+    new CultureInfo("ru-RU"),
+    new CultureInfo("en-US")
+};
+
+builder.Services.Configure<RequestLocalizationOptions>(options =>
+{
+    options.DefaultRequestCulture = new RequestCulture("uz-UZ");
+    options.SupportedCultures = supportedCultures;
+    options.SupportedUICultures = supportedCultures;
+
+    // Use QueryString (for URLs like ?culture=ru) and Cookie (for persistence)
+    options.RequestCultureProviders = new List<IRequestCultureProvider>
+    {
+        new QueryStringRequestCultureProvider(),
+        new CookieRequestCultureProvider()
+    };
+});
 
 var app = builder.Build();
 
@@ -25,20 +47,10 @@ else
     app.UseHttpsRedirection();
 }
 
-// Request localization
-var supportedCultures = new[]
-{
-    new CultureInfo("uz-UZ"),
-    new CultureInfo("ru-RU"),
-    new CultureInfo("en-US")
-};
-
-app.UseRequestLocalization(new RequestLocalizationOptions
-{
-    DefaultRequestCulture = new RequestCulture("uz-UZ"),
-    SupportedCultures = supportedCultures,
-    SupportedUICultures = supportedCultures
-});
+// Request localization — MUST be before MapRazorComponents
+app.UseRequestLocalization(
+    app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>().Value
+);
 
 app.UseStatusCodePagesWithReExecute("/not-found");
 

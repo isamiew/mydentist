@@ -41,6 +41,11 @@
   <data name="Nav_Register" xml:space="preserve"><value>Ro'yxatdan o'tish</value></data>
   <data name="Nav_PatientPortal" xml:space="preserve"><value>Bemor portali</value></data>
   <data name="Nav_DoctorPortal" xml:space="preserve"><value>Shifokor portali</value></data>
+  <data name="Nav_PatientLogin" xml:space="preserve"><value>Bemor kirishi</value></data>
+  <data name="Nav_DoctorLogin" xml:space="preserve"><value>Shifokor kirishi</value></data>
+
+  <!-- Public Page -->
+  <data name="Public_Title" xml:space="preserve"><value>MyDentist – Bosh sahifa</value></data>
 
   <!-- Hero Section -->
   <data name="Hero_Title" xml:space="preserve"><value>O'zingizga mos</value></data>
@@ -92,6 +97,21 @@
   <!-- Buttons -->
   <data name="Btn_GoToPatientPortal" xml:space="preserve"><value>Bemor portaliga o'tish</value></data>
   <data name="Btn_DoctorLogin" xml:space="preserve"><value>Shifokor kirishi</value></data>
+
+  <!-- Auth -->
+  <data name="PatientLogin_Title" xml:space="preserve"><value>Bemorlar uchun kirish</value></data>
+  <data name="PatientLogin_Subtitle" xml:space="preserve"><value>Qabul va xizmatlarni boshqarish uchun tizimga kiring.</value></data>
+  <data name="DoctorLogin_Title" xml:space="preserve"><value>Shifokorlar uchun kirish</value></data>
+  <data name="DoctorLogin_Subtitle" xml:space="preserve"><value>Bemorlaringiz va jadvalingizni boshqarish uchun tizimga kiring.</value></data>
+  <data name="Auth_EmailLabel" xml:space="preserve"><value>Email manzil</value></data>
+  <data name="Auth_EmailPlaceholder" xml:space="preserve"><value>you@example.com</value></data>
+  <data name="Auth_PasswordLabel" xml:space="preserve"><value>Parol</value></data>
+  <data name="Auth_PasswordPlaceholder" xml:space="preserve"><value>Parolingizni kiriting</value></data>
+  <data name="Auth_RememberMe" xml:space="preserve"><value>Esda saqlash</value></data>
+  <data name="Auth_ForgotPassword" xml:space="preserve"><value>Parolni unutdingizmi?</value></data>
+  <data name="Auth_SignInPatient" xml:space="preserve"><value>Bemor sifatida kirish</value></data>
+  <data name="Auth_SignInDoctor" xml:space="preserve"><value>Shifokor sifatida kirish</value></data>
+  <data name="Auth_SecureNote" xml:space="preserve"><value>Sizning ma'lumotlaringiz xavfsiz. Kirish ma'lumotlari shifrlangan kanal orqali uzatiladi.</value></data>
 
   <!-- Language -->
   <data name="Language" xml:space="preserve"><value>Til</value></data>

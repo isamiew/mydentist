@@ -1,16 +1,35 @@
 @using System.Globalization
+@using static Microsoft.AspNetCore.Components.Web.RenderMode
+@rendermode InteractiveServer
 @inject NavigationManager Nav
 
-<div class="relative">
-    <select class="text-sm border border-gray-200 rounded-lg px-2 py-1.5 text-gray-600 bg-white focus:outline-none focus:ring-2 focus:ring-primary-500 cursor-pointer"
-            @onchange="OnCultureChanged">
-        @foreach (var culture in _supportedCultures)
-        {
-            <option value="@culture.Name" selected="@(CultureInfo.CurrentCulture.Name == culture.Name)">
-                @GetDisplayName(culture)
-            </option>
-        }
-    </select>
+<div class="relative group">
+    <div class="flex items-center gap-2 px-3 py-2 bg-gray-50 hover:bg-white border border-transparent hover:border-gray-200 rounded-full transition-all duration-300 cursor-pointer shadow-sm hover:shadow-md">
+        <!-- Globe Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-500 group-hover:text-primary-600 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        
+        <!-- Active Language -->
+        <span class="text-sm font-medium text-gray-700 group-hover:text-gray-900">
+            @GetDisplayName(CultureInfo.CurrentUICulture)
+        </span>
+
+        <!-- Chevron -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-gray-400 group-hover:text-gray-600 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+
+        <!-- Native Select (Invisible Overlay for robust mobile/desktop handling) -->
+        <select class="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                @onchange="OnCultureChanged"
+                value="@CultureInfo.CurrentUICulture.Name">
+            @foreach (var culture in _supportedCultures)
+            {
+                <option value="@culture.Name">@GetDisplayName(culture)</option>
+            }
+        </select>
+    </div>
 </div>
 
 @code {
@@ -26,7 +45,7 @@
         "uz-UZ" => "O'zbek",
         "ru-RU" => "Русский",
         "en-US" => "English",
-        _ => culture.DisplayName
+        _ => culture.NativeName
     };
 
     private void OnCultureChanged(ChangeEventArgs e)
@@ -35,7 +54,7 @@
         if (!string.IsNullOrEmpty(selectedCulture))
         {
             var uri = new Uri(Nav.Uri).PathAndQuery;
-            var cultureUrl = $"Culture/Set?culture={selectedCulture}&redirectUri={Uri.EscapeDataString(uri)}";
+            var cultureUrl = $"/Culture/Set?culture={selectedCulture}&redirectUri={Uri.EscapeDataString(uri)}";
             Nav.NavigateTo(cultureUrl, forceLoad: true);
         }
     }

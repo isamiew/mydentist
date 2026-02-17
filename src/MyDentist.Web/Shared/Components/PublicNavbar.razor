@@ -1,0 +1,25 @@
+@using MyDentist.Web.Shared.Localization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Global> L
+
+<nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <BrandMark />
+
+            <div class="hidden md:flex items-center gap-8">
+                <a href="/" class="text-sm font-medium text-gray-900 hover:text-primary-600 transition-colors">@L["Nav_Home"]</a>
+                <a href="#find-dentist" class="text-sm font-medium text-gray-500 hover:text-primary-600 transition-colors">@L["Nav_FindDentist"]</a>
+                <a href="#services" class="text-sm font-medium text-gray-500 hover:text-primary-600 transition-colors">@L["Nav_Services"]</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <LanguageSwitch />
+                <a href="/patient/login" class="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors">@L["Nav_PatientLogin"]</a>
+                <a href="/doctor/login" class="inline-flex items-center px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors">
+                    @L["Nav_DoctorLogin"]
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,44 @@
+@using MyDentist.Web.Shared.Localization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Global> L
+
+<footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">M</span>
+                    </div>
+                    <span class="text-lg font-bold text-white">My<span class="text-primary-400">Dentist</span></span>
+                </div>
+                <p class="text-sm">@L["Footer_Description"]</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-3 text-sm">@L["Footer_Platform"]</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#find-dentist" class="hover:text-white transition-colors">@L["Nav_FindDentist"]</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">@L["Nav_Services"]</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-3 text-sm">@L["Footer_Support"]</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">@L["Footer_HelpCenter"]</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">@L["Footer_Contact"]</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">@L["Footer_Privacy"]</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-3 text-sm">@L["Footer_ForDentists"]</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/doctor/login" class="hover:text-white transition-colors">@L["Nav_DoctorLogin"]</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">@L["Footer_JoinNetwork"]</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-10 pt-8 border-t border-gray-800 text-center text-sm">
+            <p>&copy; @DateTime.Now.Year MyDentist. @L["Footer_Rights"]</p>
+        </div>
+    </div>
+</footer>

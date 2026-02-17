@@ -15,6 +15,13 @@
     <ProjectReference Include="..\MyDentist.Core\MyDentist.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Portals\Doctor\Dashboard\" />
+    <Folder Include="Portals\Doctor\Patients\" />
+    <Folder Include="Portals\Patient\Dashboard\" />
+    <Folder Include="Portals\Patient\Profile\" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>

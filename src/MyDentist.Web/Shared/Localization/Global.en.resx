@@ -41,6 +41,11 @@
   <data name="Nav_Register" xml:space="preserve"><value>Register</value></data>
   <data name="Nav_PatientPortal" xml:space="preserve"><value>Patient Portal</value></data>
   <data name="Nav_DoctorPortal" xml:space="preserve"><value>Doctor Portal</value></data>
+  <data name="Nav_PatientLogin" xml:space="preserve"><value>Patient Login</value></data>
+  <data name="Nav_DoctorLogin" xml:space="preserve"><value>Doctor Login</value></data>
+
+  <!-- Public Page -->
+  <data name="Public_Title" xml:space="preserve"><value>MyDentist – Welcome</value></data>
 
   <!-- Hero Section -->
   <data name="Hero_Title" xml:space="preserve"><value>Find Your Perfect</value></data>
@@ -92,6 +97,21 @@
   <!-- Buttons -->
   <data name="Btn_GoToPatientPortal" xml:space="preserve"><value>Go to Patient Portal</value></data>
   <data name="Btn_DoctorLogin" xml:space="preserve"><value>Doctor Login</value></data>
+
+  <!-- Auth -->
+  <data name="PatientLogin_Title" xml:space="preserve"><value>Patient Sign In</value></data>
+  <data name="PatientLogin_Subtitle" xml:space="preserve"><value>Access your appointments and care plan.</value></data>
+  <data name="DoctorLogin_Title" xml:space="preserve"><value>Doctor Sign In</value></data>
+  <data name="DoctorLogin_Subtitle" xml:space="preserve"><value>Manage your schedule and patient activity.</value></data>
+  <data name="Auth_EmailLabel" xml:space="preserve"><value>Email address</value></data>
+  <data name="Auth_EmailPlaceholder" xml:space="preserve"><value>you@example.com</value></data>
+  <data name="Auth_PasswordLabel" xml:space="preserve"><value>Password</value></data>
+  <data name="Auth_PasswordPlaceholder" xml:space="preserve"><value>Enter your password</value></data>
+  <data name="Auth_RememberMe" xml:space="preserve"><value>Remember me</value></data>
+  <data name="Auth_ForgotPassword" xml:space="preserve"><value>Forgot password?</value></data>
+  <data name="Auth_SignInPatient" xml:space="preserve"><value>Sign in as Patient</value></data>
+  <data name="Auth_SignInDoctor" xml:space="preserve"><value>Sign in as Doctor</value></data>
+  <data name="Auth_SecureNote" xml:space="preserve"><value>Your information is protected with encrypted transport.</value></data>
 
   <!-- Language -->
   <data name="Language" xml:space="preserve"><value>Language</value></data>

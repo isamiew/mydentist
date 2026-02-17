@@ -41,6 +41,11 @@
   <data name="Nav_Register" xml:space="preserve"><value>Регистрация</value></data>
   <data name="Nav_PatientPortal" xml:space="preserve"><value>Портал пациента</value></data>
   <data name="Nav_DoctorPortal" xml:space="preserve"><value>Портал врача</value></data>
+  <data name="Nav_PatientLogin" xml:space="preserve"><value>Вход пациента</value></data>
+  <data name="Nav_DoctorLogin" xml:space="preserve"><value>Вход врача</value></data>
+
+  <!-- Public Page -->
+  <data name="Public_Title" xml:space="preserve"><value>MyDentist – Добро пожаловать</value></data>
 
   <!-- Hero Section -->
   <data name="Hero_Title" xml:space="preserve"><value>Найдите идеального</value></data>
@@ -92,6 +97,21 @@
   <!-- Buttons -->
   <data name="Btn_GoToPatientPortal" xml:space="preserve"><value>Перейти в портал пациента</value></data>
   <data name="Btn_DoctorLogin" xml:space="preserve"><value>Вход для врачей</value></data>
+
+  <!-- Auth -->
+  <data name="PatientLogin_Title" xml:space="preserve"><value>Вход для пациентов</value></data>
+  <data name="PatientLogin_Subtitle" xml:space="preserve"><value>Управляйте приёмами и планом лечения.</value></data>
+  <data name="DoctorLogin_Title" xml:space="preserve"><value>Вход для врачей</value></data>
+  <data name="DoctorLogin_Subtitle" xml:space="preserve"><value>Управляйте расписанием и пациентами.</value></data>
+  <data name="Auth_EmailLabel" xml:space="preserve"><value>Электронная почта</value></data>
+  <data name="Auth_EmailPlaceholder" xml:space="preserve"><value>you@example.com</value></data>
+  <data name="Auth_PasswordLabel" xml:space="preserve"><value>Пароль</value></data>
+  <data name="Auth_PasswordPlaceholder" xml:space="preserve"><value>Введите пароль</value></data>
+  <data name="Auth_RememberMe" xml:space="preserve"><value>Запомнить меня</value></data>
+  <data name="Auth_ForgotPassword" xml:space="preserve"><value>Забыли пароль?</value></data>
+  <data name="Auth_SignInPatient" xml:space="preserve"><value>Войти как пациент</value></data>
+  <data name="Auth_SignInDoctor" xml:space="preserve"><value>Войти как врач</value></data>
+  <data name="Auth_SecureNote" xml:space="preserve"><value>Ваши данные защищены и передаются по зашифрованному каналу.</value></data>
 
   <!-- Language -->
   <data name="Language" xml:space="preserve"><value>Язык</value></data>
