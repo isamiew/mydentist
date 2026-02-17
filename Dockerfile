@@ -3,14 +3,15 @@ FROM mcr.microsoft.com/dotnet/sdk:10.0-preview AS build
 WORKDIR /src
 
 # Copy solution and project files first for better caching
-COPY ["MyDentist.sln", "./"]
+# Copy solution and project files first for better caching
+COPY ["MyDentist.slnx", "./"]
 COPY ["src/MyDentist.Web/MyDentist.Web.csproj", "src/MyDentist.Web/"]
 COPY ["src/MyDentist.Core/MyDentist.Core.csproj", "src/MyDentist.Core/"]
 COPY ["src/MyDentist.Infrastructure/MyDentist.Infrastructure.csproj", "src/MyDentist.Infrastructure/"]
 COPY ["tests/MyDentist.Tests/MyDentist.Tests.csproj", "tests/MyDentist.Tests/"]
 
 # Restore dependencies for the entire solution
-RUN dotnet restore
+RUN dotnet restore "MyDentist.slnx"
 
 # Copy the rest of the source code
 COPY . .
