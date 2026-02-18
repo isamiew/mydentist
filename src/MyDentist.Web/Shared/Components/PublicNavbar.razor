@@ -2,22 +2,55 @@
 @using Microsoft.Extensions.Localization
 @inject IStringLocalizer<Global> L
 
-<nav class="bg-white shadow-sm sticky top-0 z-50">
+<nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-xs">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
+
             <BrandMark />
 
-            <div class="hidden md:flex items-center gap-8">
-                <a href="/" class="text-sm font-medium text-gray-900 hover:text-primary-600 transition-colors">@L["Nav_Home"]</a>
-                <a href="#find-dentist" class="text-sm font-medium text-gray-500 hover:text-primary-600 transition-colors">@L["Nav_FindDentist"]</a>
-                <a href="#services" class="text-sm font-medium text-gray-500 hover:text-primary-600 transition-colors">@L["Nav_Services"]</a>
+            <!-- Desktop nav links -->
+            <div class="hidden md:flex items-center gap-1">
+                <a href="/" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200">@L["Nav_Home"]</a>
+                <a href="/#find-dentist" class="px-3 py-2 text-sm font-medium text-gray-500 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200">@L["Nav_FindDentist"]</a>
+                <a href="/#services" class="px-3 py-2 text-sm font-medium text-gray-500 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-all duration-200">@L["Nav_Services"]</a>
             </div>
 
-            <div class="flex items-center gap-3">
+            <!-- Desktop actions -->
+            <div class="hidden md:flex items-center gap-3">
                 <LanguageSwitch />
-                <a href="/patient/login" class="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors">@L["Nav_PatientLogin"]</a>
-                <a href="/doctor/login" class="inline-flex items-center px-4 py-2 bg-primary-600 text-white text-sm font-medium rounded-lg hover:bg-primary-700 transition-colors">
-                    @L["Nav_DoctorLogin"]
+                <a href="/login" class="inline-flex items-center gap-2 px-5 py-2 bg-primary-600 text-white text-sm font-semibold rounded-xl hover:bg-primary-700 transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-px">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"/>
+                    </svg>
+                    @L["Nav_Login"]
+                </a>
+            </div>
+
+            <!-- Mobile: language + hamburger label -->
+            <div class="flex md:hidden items-center gap-1.5">
+                <LanguageSwitch />
+                <label for="nav-mobile-toggle" class="p-2 text-gray-500 hover:text-gray-800 hover:bg-gray-100 rounded-lg cursor-pointer transition-colors">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile menu (CSS-only checkbox toggle) -->
+    <input id="nav-mobile-toggle" type="checkbox" class="sr-only peer">
+    <div class="hidden peer-checked:block md:hidden border-t border-gray-100 bg-white shadow-lg animate-slide-down">
+        <div class="max-w-7xl mx-auto px-4 py-3 space-y-0.5">
+            <a href="/" class="flex items-center px-3 py-2.5 text-sm font-medium text-gray-700 rounded-xl hover:bg-gray-50 transition-colors">@L["Nav_Home"]</a>
+            <a href="/#find-dentist" class="flex items-center px-3 py-2.5 text-sm font-medium text-gray-600 rounded-xl hover:bg-gray-50 transition-colors">@L["Nav_FindDentist"]</a>
+            <a href="/#services" class="flex items-center px-3 py-2.5 text-sm font-medium text-gray-600 rounded-xl hover:bg-gray-50 transition-colors">@L["Nav_Services"]</a>
+            <div class="pt-3 pb-1 border-t border-gray-100 mt-2">
+                <a href="/login" class="flex items-center justify-center gap-2 px-3 py-2.5 text-sm font-semibold text-white bg-primary-600 rounded-xl hover:bg-primary-700 text-center transition-colors">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"/>
+                    </svg>
+                    @L["Nav_Login"]
                 </a>
             </div>
         </div>

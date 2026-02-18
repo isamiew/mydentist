@@ -115,4 +115,36 @@
 
   <!-- Language -->
   <data name="Language" xml:space="preserve"><value>Til</value></data>
+
+  <!-- How It Works Section -->
+  <data name="HowItWorks_Badge" xml:space="preserve"><value>Oddiy jarayon</value></data>
+  <data name="HowItWorks_Title" xml:space="preserve"><value>Bu qanday ishlaydi</value></data>
+  <data name="HowItWorks_Subtitle" xml:space="preserve"><value>Tasdiqlangan stomatologni 3 ta oson qadamda toping va yoziling</value></data>
+  <data name="HowItWorks_Step1_Title" xml:space="preserve"><value>Qidirish</value></data>
+  <data name="HowItWorks_Step1_Desc" xml:space="preserve"><value>Mutaxassislik, viloyat yoki ism bo'yicha stomatolog toping</value></data>
+  <data name="HowItWorks_Step2_Title" xml:space="preserve"><value>Yozilish</value></data>
+  <data name="HowItWorks_Step2_Desc" xml:space="preserve"><value>Qulay vaqtni tanlang va qabulni tasdiqlang</value></data>
+  <data name="HowItWorks_Step3_Title" xml:space="preserve"><value>Tashrif</value></data>
+  <data name="HowItWorks_Step3_Desc" xml:space="preserve"><value>Ishonchli stomatologdan professional yordam oling</value></data>
+
+  <!-- CTA Section -->
+  <data name="CTA_Title" xml:space="preserve"><value>Stomatolog topishga tayyormisiz?</value></data>
+  <data name="CTA_Subtitle" xml:space="preserve"><value>Minglab mamnun bemorlar qatoriga qo'shiling</value></data>
+
+  <!-- Footer extra -->
+  <data name="Footer_Terms" xml:space="preserve"><value>Shartlar</value></data>
+
+  <!-- Combined Login Page -->
+  <data name="Login_Title" xml:space="preserve"><value>Tizimga kirish</value></data>
+  <data name="Login_Subtitle" xml:space="preserve"><value>Rolingizni tanlang va davom eting</value></data>
+  <data name="Login_TabPatient" xml:space="preserve"><value>Bemor</value></data>
+  <data name="Login_TabDoctor" xml:space="preserve"><value>Shifokor</value></data>
+
+  <!-- Portal Layouts -->
+  <data name="Portal_NavMain" xml:space="preserve"><value>Asosiy</value></data>
+  <data name="Portal_NavDashboard" xml:space="preserve"><value>Boshqaruv paneli</value></data>
+  <data name="Portal_NavPatients" xml:space="preserve"><value>Mening bemorlarim</value></data>
+  <data name="Portal_NavProfile" xml:space="preserve"><value>Mening profilim</value></data>
+  <data name="Portal_DoctorTitle" xml:space="preserve"><value>Shifokor portali</value></data>
+  <data name="Portal_PatientTitle" xml:space="preserve"><value>Bemor portali</value></data>
 </root>

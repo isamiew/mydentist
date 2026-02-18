@@ -115,4 +115,36 @@
 
   <!-- Language -->
   <data name="Language" xml:space="preserve"><value>Язык</value></data>
+
+  <!-- How It Works Section -->
+  <data name="HowItWorks_Badge" xml:space="preserve"><value>Простой процесс</value></data>
+  <data name="HowItWorks_Title" xml:space="preserve"><value>Как это работает</value></data>
+  <data name="HowItWorks_Subtitle" xml:space="preserve"><value>Найдите и запишитесь к проверенному стоматологу за 3 простых шага</value></data>
+  <data name="HowItWorks_Step1_Title" xml:space="preserve"><value>Поиск</value></data>
+  <data name="HowItWorks_Step1_Desc" xml:space="preserve"><value>Найдите стоматолога по специализации, региону или имени</value></data>
+  <data name="HowItWorks_Step2_Title" xml:space="preserve"><value>Запись</value></data>
+  <data name="HowItWorks_Step2_Desc" xml:space="preserve"><value>Выберите удобное время и подтвердите приём</value></data>
+  <data name="HowItWorks_Step3_Title" xml:space="preserve"><value>Визит</value></data>
+  <data name="HowItWorks_Step3_Desc" xml:space="preserve"><value>Получите помощь у надёжного специалиста</value></data>
+
+  <!-- CTA Section -->
+  <data name="CTA_Title" xml:space="preserve"><value>Готовы найти стоматолога?</value></data>
+  <data name="CTA_Subtitle" xml:space="preserve"><value>Присоединяйтесь к тысячам довольных пациентов</value></data>
+
+  <!-- Footer extra -->
+  <data name="Footer_Terms" xml:space="preserve"><value>Условия</value></data>
+
+  <!-- Combined Login Page -->
+  <data name="Login_Title" xml:space="preserve"><value>Войти в систему</value></data>
+  <data name="Login_Subtitle" xml:space="preserve"><value>Выберите свою роль и продолжите</value></data>
+  <data name="Login_TabPatient" xml:space="preserve"><value>Пациент</value></data>
+  <data name="Login_TabDoctor" xml:space="preserve"><value>Врач</value></data>
+
+  <!-- Portal Layouts -->
+  <data name="Portal_NavMain" xml:space="preserve"><value>Главное</value></data>
+  <data name="Portal_NavDashboard" xml:space="preserve"><value>Панель управления</value></data>
+  <data name="Portal_NavPatients" xml:space="preserve"><value>Мои пациенты</value></data>
+  <data name="Portal_NavProfile" xml:space="preserve"><value>Мой профиль</value></data>
+  <data name="Portal_DoctorTitle" xml:space="preserve"><value>Портал врача</value></data>
+  <data name="Portal_PatientTitle" xml:space="preserve"><value>Портал пациента</value></data>
 </root>

@@ -1,17 +1,20 @@
 @using MyDentist.Web.Shared.Components
 @inherits LayoutComponentBase
 
-<div class="min-h-screen bg-gray-50">
-    <header class="bg-white border-b border-gray-100">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-            <a href="/" class="inline-flex items-center">
-                <BrandMark />
-            </a>
+<div class="min-h-screen bg-gradient-to-br from-gray-50 via-white to-primary-50 flex flex-col">
+
+    <header class="bg-white/80 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <BrandMark />
             <LanguageSwitch />
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main class="flex-1 flex items-center justify-center px-4 py-12">
         @Body
     </main>
+
+    <footer class="py-5 text-center">
+        <p class="text-xs text-gray-400">&copy; @DateTime.Now.Year MyDentist. All rights reserved.</p>
+    </footer>
 </div>
